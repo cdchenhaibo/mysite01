@@ -1,0 +1,10 @@
+    <div class="col-xs-12 col-md-8">
+        <ul>
+            {% for file_info in file_infos %}
+            <li>
+                <a href="../download/{{ file_info.id }}">{{ file_info.file_name }}</a>
+                <a href="../delete/{{ file_info.id }}">删除</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
